@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Benjamin Poggio</title>
 </head>
-<body>
-    
+<body id="home">
+
+  <header class="flex rows">
+    <div class="flex">
+    </div>
+    <div class="nav">
+      <ul class="flex rows">
+        <li><a href="#home" class="button">Home</a></li>
+        <li><a href="#about" class="button">About</a></li>
+        <li><a href="#projects" class="button">Projects</a></li>
+        <li><a href="#contact" class="button">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <section id="presentation" class="flex cols presentation">
+    <div class="col">
+      <h1 class="title">Hey, I'm Benjamin Poggio!</h1>
+      <p class="description">A junior web and C# developer.</p>
+      <a href="#projects" class="button">See my projects</a>
+    </div>
+  </section>
+
+  <section id="about" class="flex rows about">
+    <div class="introduction">
+      <h2 class="subtitle">About me</h2>
+      <div class="divider"></div>
+      <p>Here you will find more information about me, what i do and some of my current skills.</p>
+    </div>
+    <div class="row">
+      <h3 class="subtitle">Let me introduce myself!</h3>
+      <p>I have been a software developer since 2022, focusing on web development and C#. My interest in technology started a few years ago, and I am passionate about creating functional and efficient solutions.</p>
+      <p>I focus on web development, but I also explore other areas of programming. I learn quickly and adapt to new tools, trying to keep up with the latest trends. I enjoy building digital experiences that improve users' lives.</p>
+      <p>I value continuous learning and working on practical projects. Programming is a constantly evolving field, and I am excited to grow and face new challenges.</p>
+      <a href="#contact" class="button">Contact me</a>
+    </div>
+    <div class="row skills">
+      <h3 class="subtitle">Skills</h3>
+      <ul class="flex rows skill-list">
+        <li class="skill">HTML</li>
+        <li class="skill">CSS</li>
+        <li class="skill">Java</li>
+        <li class="skill">Python</li>
+        <li class="skill">C#</li>
+        <li class="skill">MySQL</li>
+        <li class="skill">Responsive design</li>
+        <li class="skill">Git</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="flex cols projects">
+    <div class="introduction">
+      <h2 class="subtitle">Projects</h2>
+      <div class="divider"></div>
+      <p>Here you will find some of my current best projects.</p>
+    </div>
+    <div class="flex cols">
+      <div class="flex rows project">
+        <img src="./assets/img/projects/1.png" alt="" class="project-image row">
+        <div class="row data">
+          <h3 class="subtitle">Digital portfolio</h3>
+          <p class="description">A digital portfolio built with HTML and CSS that showcases who I am, my skills, and provides an easy way to get in touch.</p>
+          <a href="https://github.com/devpoggio/portfolio" class="button">Go to project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="flex cols contact">
+    <div class="introduction">
+      <h2 class="subtitle">Contact me</h2>
+      <div class="divider"></div>
+      <p>Feel free to contact me by submitting the form below.</p>
+    </div>
+    <div class="col">
+      <form action="https://formsubmit.co/25a88deefac8e66837d4422f6a1fa77b" method="POST">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Your name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="yourname@domain.com" required>
+        </div>
+        <div class="form-field">
+          <label for="subject">Message</label>
+          <textarea rows="6" maxlength="200" name="subject" id="subject" placeholder="Hey! I want to collab with you." required></textarea>
+        </div>
+        <div class="flex row form-field button-field">
+          <button type="submit" class="button">Submit</button>
+        </div>
+
+        <input type="hidden" name="_next" value="https://devpoggio.github.io">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+    </div>
+  </section>
+
+  <footer class="flex rows">
+    <div class="row">
+      <h2 class="subtitle">Benjamin Poggio</h2>
+      <p>A junior web and C# developer.</p>
+    </div>
+    <div class="row">
+      <h2 class="subtitle media-subtitle">Social media</h2>
+      <ul class="flex row social-media">
+        <li><a href="" target="_blank"><img src="./assets/img/icons/linkedin.svg" alt="Linkedin" class="social-icon"></a></li>
+        <li><a href="" target="_blank"><img src="./assets/img/icons/x_dark.svg" alt="Twitter/X" class="social-icon"></a></li>
+        <li><a href="" target="_blank"><img src="./assets/img/icons/instagram_dark.svg" alt="Instagram" class="social-icon"></a></li>
+        <li><a href="https://github.com/devpoggio" target="_blank"><img src="./assets/img/icons/github_dark.svg" alt="GitHub" class="social-icon"></a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>&copy; Copyright 2025. Made by Benjamin Poggio.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

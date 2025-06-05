@@ -1,0 +1,355 @@
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter-VariableFont_opsz,wght.ttf');
+}
+
+/**/
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: Inter, sans-serif;
+
+  background-color: #FFF;
+  color: #000;
+
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+  General flexbox styles
+*/
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.rows {
+  flex-direction: row;
+}
+
+.cols {
+  flex-direction: column;
+}
+
+/*
+  Button styles
+*/
+
+a[class="button"] {
+  display: inline-block;
+}
+
+.button {
+  padding: 1rem;
+
+  font-size: 1.2rem;
+
+  background-color: #000;
+  color: #FFF;
+
+  text-align: center;
+  font-weight: 900;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  transition: 0.25s ease-in-out;
+}
+
+.button:hover {
+  color: #fcff4a;
+  cursor: pointer;
+}
+
+/*
+  General section styles
+*/
+
+section {
+  width: 100%;
+  padding: 2rem;
+}
+
+section .title {
+  font-size: 2rem;
+}
+
+section .subtitle {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h3[class="subtitle"] {
+  font-size: 1.5rem;
+}
+
+strong {
+  font-weight: 900;
+}
+
+/*
+  Header/nav styles
+*/
+
+header {
+  width: 100%;
+  padding: 0.5rem;
+
+  background-color: #000;
+
+  justify-content: space-between;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header .subtitle {
+  color: #FFF;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
+
+header > .flex {
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+  Presentation section styles
+*/
+
+.presentation {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #a6b8bb;
+}
+
+.presentation > .col {
+  width: 90%;
+  margin: auto auto;
+  padding: 1rem 0;
+}
+
+.presentation .title {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.presentation .description {
+  font-size: 1.5rem;
+}
+
+.presentation .button {
+  margin: 1rem 0;
+}
+
+/*
+  Section introduction styles
+*/
+
+.introduction {
+  width: 100%;
+
+  text-align: center;
+}
+
+.introduction > .divider {
+  height: 0.5rem;
+  max-width: 10rem;
+
+  margin: 0 auto;
+  margin-top: 0.5rem;
+
+  background-color: #000;
+  border-radius: 0.25rem;
+}
+
+.introduction > p {
+  margin: 1rem;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+/*
+  Section about styles
+*/
+
+.about > .row p {
+  margin: 1rem 0;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.about .row {
+  min-width: 300px;
+  margin: 0 auto;
+  flex: 1 1 50%;
+}
+
+.skills .subtitle {
+  text-align: center;
+}
+
+.skill-list {
+  margin: 1rem 0;
+  padding: 0 1rem;
+
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill {
+  padding: 1rem;
+  border-radius: 0.25rem;
+
+  background-color: #a6b8bb;
+
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+/*
+  Section projects styles
+*/
+
+.project {
+  margin: 2rem 0;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.project .row {
+  min-width: 300px;
+  margin: 0 auto;
+  flex: 1 1 50%;
+}
+
+.project > .data {
+  padding: 1rem;
+}
+
+.project .description {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.data > .button {
+  margin-top: 1rem;
+}
+
+/*
+  Section contact styles
+*/
+
+.contact {
+  width: 100%;
+
+  background-color: #a6b8bb;
+}
+
+form {
+  margin: 0 auto;
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+
+  background-color: #FFF;
+
+  width: 90%;
+  max-width: 650px;
+}
+
+.form-field {
+  margin: 1rem auto;
+}
+
+.form-field > label {
+  font-weight: 600;
+}
+
+label, input, textarea {
+  display: block;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+input, textarea {
+  font-family: Inter, sans-serif;
+  background-color: #F0F0F0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.button-field {
+  justify-content: flex-end;
+}
+
+/*
+  Footer styles
+*/
+
+footer {
+  background-color: #000;
+  color: #FFF;
+  justify-content: space-between;
+}
+
+footer > .row {
+  min-width: 300px;
+  margin: 1rem;
+}
+
+.social-media > li {
+  margin: 0.5rem;
+}
+
+.social-icon {
+  width: 1.6rem;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
